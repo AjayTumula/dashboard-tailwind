@@ -6,8 +6,8 @@ export const RevenueCard = ({
     orderCount,
     amount, 
 }) => {
-    return <div className="bg-white rounded shadow-sm">
-        <div>
+    return <div className="bg-white rounded shadow-md pd-4">
+        <div className="text-gray-700">
             {title}
             ?
         </div>
@@ -16,7 +16,7 @@ export const RevenueCard = ({
                 R {amount}
             </div>
             {orderCount ? <div>
-                {count} order(s) {">"}
+                {orderCount} order(s) {">"}
             </div> : null}
         </div>
     </div>
